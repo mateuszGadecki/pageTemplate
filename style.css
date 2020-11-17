@@ -269,7 +269,7 @@ body {
   height: 100%;
   color: #fff;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
   display: grid;
   grid-template-rows: 50% 50% 50%;
   grid-template-columns: 33.3% 33.3% 33.3%;
@@ -292,7 +292,7 @@ body {
   border: 2px solid #fff;
   display: inline-block;
   border-radius: 60px;
-  padding: 0.4em 0.5em;
+  padding: 0.2em 0.3em;
 }
 
 .offerBoxTitle {
@@ -304,4 +304,55 @@ body {
   margin-top: 20px;
   font-size: 90%;
   line-height: 145%;
+}
+
+/* OUR TEAM< */
+
+.ourTeam-section {
+  height: 85vh;
+  background-color: #181a1c;
+}
+
+.ourTeam {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 10% 65%;
+}
+
+.ourTeamContent {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100% 100% 100%;
+}
+
+.photo {
+  height: 284px;
+  width: 284px;
+  margin: 30px auto;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.teamMember_1,
+.teamMember_2,
+.teamMember_3 {
+  text-align: center;
+  color: #fff;
+}
+
+.name {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.profession {
+  color: #fbc531;
+  margin-top: 10px;
+  font-size: 90%;
 }
