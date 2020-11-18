@@ -328,6 +328,13 @@ body {
   grid-template-rows: 100% 100% 100%;
 }
 
+.ourTeamTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .photo {
   height: 284px;
   width: 284px;
@@ -355,4 +362,72 @@ body {
   color: #fbc531;
   margin-top: 10px;
   font-size: 90%;
+}
+
+/* HOW IT WORKS */
+.howItWorks-section {
+  height: 80vh;
+  color: #181a1c;
+  background-image: url(https://beonepage.betheme.me/wp-content/uploads/2015/11/work-process-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.howItWorksTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.howItWorks {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 5% 65%;
+  color: #fff;
+}
+
+.howItWorksContent {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.howItWorksIcons {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 80%;
+}
+
+.howItWorksIcons::after {
+  bottom: 50px;
+  left: 10%;
+  position: absolute;
+  height: 1px;
+  display: block;
+  width: 950px;
+  background: #808080;
+  content: "";
+}
+
+.content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_howItWorks {
+  font-size: 220%;
+}
+
+.howItWorksDes {
+  font-size: 90%;
+  line-height: 145%;
 }
