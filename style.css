@@ -444,3 +444,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* FUN FACT */
+.funFact-section {
+  height: 30vh;
+  background-image: url(https://projekty-it.eu/wp-content/uploads/2018/06/work-process-bg-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.facts {
+  width: 98%;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.factDes {
+  margin-top: 15px;
+  color: #fbc531;
+  font-size: 80%;
+}
