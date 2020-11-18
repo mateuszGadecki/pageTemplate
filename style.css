@@ -29,6 +29,14 @@ body {
   color: #fbc531;
 }
 
+/* SECTION TITLE + SEPARATOR */
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .centerText {
   text-transform: uppercase;
   word-spacing: 4px;
@@ -43,6 +51,7 @@ body {
   color: white;
   font-size: 85%;
 }
+
 /* SEPARATOR */
 .divider {
   display: table;
@@ -258,13 +267,6 @@ body {
   grid-template-rows: 15% 10% 75%;
 }
 
-.offerTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .offerContent {
   height: 100%;
   color: #fff;
@@ -306,8 +308,7 @@ body {
   line-height: 145%;
 }
 
-/* OUR TEAM< */
-
+/* OUR TEAM */
 .ourTeam-section {
   height: 85vh;
   background-color: #181a1c;
@@ -326,13 +327,6 @@ body {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 100% 100% 100%;
-}
-
-.ourTeamTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .photo {
@@ -371,13 +365,6 @@ body {
   background-image: url(https://beonepage.betheme.me/wp-content/uploads/2015/11/work-process-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
-}
-
-.howItWorksTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .howItWorks {
