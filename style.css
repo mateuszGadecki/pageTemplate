@@ -418,3 +418,29 @@ body {
   font-size: 90%;
   line-height: 145%;
 }
+
+/* OUR CUSTOMERS */
+.ourCustomers-section {
+  height: 70vh;
+  background-color: #181a1c;
+}
+
+.ourCustomers {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 25% 55%;
+}
+
+.ourCustomersContent {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.clientItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
