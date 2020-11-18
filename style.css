@@ -473,3 +473,198 @@ body {
   color: #fbc531;
   font-size: 80%;
 }
+
+/* CONTACT */
+.contact-section {
+  height: 80vh;
+  background-color: #181a1c;
+}
+
+.contact {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 5% 65%;
+}
+
+.contactContent {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.contactForm {
+  height: 90%;
+  margin: auto 0;
+}
+
+.data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70% 30%;
+}
+
+.contactLeft {
+  height: 90%;
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.contactData {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #b2bec3;
+  line-height: 145%;
+}
+
+.contactIconBox {
+  width: 70%;
+  height: 30%;
+  margin: auto auto;
+  border-left: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIcon {
+  margin-right: 35px;
+  color: #b2bec3;
+  font-size: 130%;
+}
+/* Contact Form */
+.contactForm {
+  height: 85%;
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: 15% 15% 30% 15% 15%;
+}
+
+.customerData {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.name,
+.eMail,
+.phone,
+.subject,
+.captcha,
+.message {
+  width: 100%;
+  position: relative;
+  height: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.inputCaptcha,
+.inputPhone,
+.inputEmail,
+.inputName,
+.inputSubject,
+.inputMessage {
+  color: #b2bec3;
+  background-color: #181a1c;
+  padding-top: 22px;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 90%;
+}
+
+.labelCaptcha,
+.labelPhone,
+.labelEmail,
+.labelName,
+.labelSubject,
+.labelMessage {
+  color: #b2bec3;
+  pointer-events: none;
+  border-bottom: 1px solid #b2bec3;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.inputCaptcha:focus + .labelCaptcha,
+.inputPhone:focus + .labelPhone,
+.inputEmail:focus + .labelEmail,
+.inputName:focus + .labelName,
+.inputSubject:focus + .labelSubject,
+.inputMessage:focus + .labelMessage {
+  border-color: #fff;
+}
+
+.inputSubject,
+.labelSubject {
+  width: 97%;
+}
+
+.inputName,
+.inputPhone,
+.inputEmail,
+.labelName,
+.labelPhone,
+.labelEmail {
+  width: 90%;
+}
+
+.inputCaptcha,
+.labelCaptcha {
+  width: 50%;
+}
+
+.inputMessage,
+.labelMessage {
+  width: 97%;
+}
+.inputMessage {
+  height: 90% !important;
+  margin-top: 8px !important;
+  resize: none;
+  overflow-y: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputPhone {
+  appearance: none !important;
+}
+
+.content-name,
+.content-email,
+.content-phone,
+.content-subject,
+.content-Captcha {
+  font-size: 80%;
+}
+
+.submit-btn {
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 110%;
+  padding: 5px 100px;
+  color: #fff;
+  background-color: #181a1c;
+  border: 1px solid #fff;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+  background-color: #fff;
+  color: #181a1c;
+}
