@@ -461,9 +461,15 @@ body {
   font-size: 220%;
 }
 
-.howItWorksDes {
+.howItWorksDes_1 {
   font-size: 90%;
   line-height: 145%;
+}
+
+.howItWorksDes_2,
+.howItWorksDes_3,
+.howItWorksDes_4 {
+  visibility: hidden;
 }
 
 /* OUR CUSTOMERS */
