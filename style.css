@@ -144,7 +144,8 @@ body {
 
 /* ABOUT US */
 .aboutUs-section {
-  height: 80vh;
+  height: auto;
+  padding: 80px 0;
   background-color: #181a1c;
 }
 
@@ -152,21 +153,23 @@ body {
   position: relative;
   height: 100%;
   display: grid;
-  grid-template-rows: 30% 10% 60%;
+  grid-template-rows: 20% 10% 70%;
   width: 80%;
   margin: 0 auto;
 }
 
 .aboutUsDes {
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto auto;
 }
 .skillBars {
+  height: 90%;
   display: grid;
-  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto auto auto;
 }
 
 .aboutUsContent {
+  padding: 40px 0px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -179,25 +182,31 @@ body {
 }
 
 .des_1 {
-  border-left: solid 5px;
+  display: flex;
+  align-items: center;
+  border-left: solid 7px;
   border-color: #fbc531;
   color: white;
-  font-size: 110%;
+  font-weight: 400;
+  font-size: 90%;
   line-height: 145%;
-  width: 100%;
+  width: 90%;
 }
 
 .des_1 p {
   width: 90%;
-  margin: 2% auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .des_2 {
+  width: 90%;
   color: white;
-  font-size: 90%;
+  font-size: 70%;
+  font-weight: 400;
+  line-height: 145%;
 }
 
 .des_2 p {
@@ -206,11 +215,13 @@ body {
 
 .skill_bar {
   display: grid;
+  height: 70%;
   grid-template-rows: 50% 50%;
 }
 
 .bar-line {
-  width: 80%;
+  width: 100%;
+  padding-top: 10px;
 }
 .left {
   height: 2px;
@@ -238,11 +249,13 @@ body {
   color: #fff;
   letter-spacing: 1px;
   font-weight: 300;
+  font-size: 85%;
 }
 
 /* OFFER */
 .ourOffer {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 100px;
   background-image: url(https://beonepage.betheme.me/wp-content/uploads/2015/11/icon-service-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -273,7 +286,7 @@ body {
   margin: 0 auto;
   width: 90%;
   display: grid;
-  grid-template-rows: 50% 50% 50%;
+  grid-template-rows: auto;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
@@ -287,6 +300,7 @@ body {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .icon {
@@ -310,7 +324,8 @@ body {
 
 /* OUR TEAM */
 .ourTeam-section {
-  height: 85vh;
+  height: auto;
+  padding: 60px 0 140px 0;
   background-color: #181a1c;
 }
 
@@ -321,16 +336,17 @@ body {
 }
 
 .ourTeamContent {
-  height: 100%;
   width: 70%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: normal;
 }
 
 .posterBox {
-  height: 284px;
-  width: 284px;
+  position: relative;
+  height: 255px;
+  width: 255px;
   margin: 30px auto;
   position: relative;
   overflow: hidden;
@@ -353,15 +369,16 @@ body {
 
 .teamMember_1,
 .teamMember_2,
-.teamMember_3 {
+.teamMember_3,
+.teamMember_4 {
+  display: block;
   text-align: center;
   color: #fff;
 }
 
-.teamMember_4,
 .teamMember_5,
 .teamMember_6 {
-  visibility: hidden;
+  display: none;
 }
 
 .workerName {
@@ -573,6 +590,8 @@ body {
   align-items: flex-end;
   color: #b2bec3;
   line-height: 145%;
+  font-size: 85%;
+  font-weight: 600;
 }
 
 .contactIconBox {
@@ -622,68 +641,55 @@ body {
 .inputName,
 .inputSubject,
 .inputMessage {
-  color: #b2bec3;
+  color: #fff;
   background-color: #181a1c;
-  padding-top: 22px;
+  padding-top: 5px;
   border: none;
   outline: none;
   height: 100%;
-  font-size: 90%;
-}
-
-.labelCaptcha,
-.labelPhone,
-.labelEmail,
-.labelName,
-.labelSubject,
-.labelMessage {
-  color: #b2bec3;
-  pointer-events: none;
+  font-size: 80%;
   border-bottom: 1px solid #b2bec3;
-  position: absolute;
-  bottom: 0px;
-  left: 0%;
-  height: 100%;
   transition: 0.2s;
 }
 
-.inputCaptcha:focus + .labelCaptcha,
-.inputPhone:focus + .labelPhone,
-.inputEmail:focus + .labelEmail,
-.inputName:focus + .labelName,
-.inputSubject:focus + .labelSubject,
-.inputMessage:focus + .labelMessage {
+.inputCaptcha:focus,
+.inputPhone:focus,
+.inputEmail:focus,
+.inputName:focus,
+.inputSubject:focus,
+.inputMessage:focus {
   border-color: #fff;
 }
 
-.inputSubject,
-.labelSubject {
-  width: 97%;
+input::-webkit-input-placeholder {
+  color: rgb(118, 118, 118);
+  transition: 0.2s;
 }
 
-.inputName,
+input:focus::-webkit-input-placeholder {
+  color: rgb(133, 133, 133);
+}
+
+​ .inputName,
 .inputPhone,
-.inputEmail,
-.labelName,
-.labelPhone,
-.labelEmail {
+.inputEmail {
   width: 90%;
 }
 
-.inputCaptcha,
-.labelCaptcha {
+.inputCaptcha {
   width: 50%;
 }
 
-.inputMessage,
-.labelMessage {
+.inputSubject {
   width: 97%;
 }
+
 .inputMessage {
   height: 90% !important;
   margin-top: 8px !important;
   resize: none;
   overflow-y: auto;
+  width: 97%;
 }
 
 input::-webkit-outer-spin-button,
@@ -695,21 +701,12 @@ input::-webkit-inner-spin-button {
   appearance: none !important;
 }
 
-.content-name,
-.content-email,
-.content-phone,
-.content-subject,
-.content-Captcha {
-  font-size: 80%;
-}
-
 .submit-btn {
   cursor: pointer;
   display: block;
   margin-top: 20px;
-  margin-left: 30px;
   font-size: 110%;
-  padding: 5px 100px;
+  padding: 5px 120px;
   color: #fff;
   background-color: #181a1c;
   border: 1px solid #fff;
