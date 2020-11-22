@@ -478,14 +478,12 @@ body {
   font-size: 220%;
 }
 
-.howItWorksDes_1 {
+.howItWorksDes_visible {
   font-size: 90%;
   line-height: 145%;
 }
 
-.howItWorksDes_2,
-.howItWorksDes_3,
-.howItWorksDes_4 {
+.howItWorksDes_hide {
   visibility: hidden;
 }
 
@@ -558,7 +556,7 @@ body {
 
 .contactContent {
   height: 100%;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -573,6 +571,12 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: 70% 30%;
+  color: #b2bec3;
+  transition: color 0.5s;
+}
+
+.data:hover {
+  color: #fff;
 }
 
 .contactLeft {
@@ -588,10 +592,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  color: #b2bec3;
   line-height: 145%;
-  font-size: 85%;
+  font-size: 70%;
   font-weight: 600;
+  font-family: "Open Sans" !important;
+}
+
+.dataDetails {
+  font-size: 120%;
 }
 
 .contactIconBox {
@@ -606,7 +614,6 @@ body {
 
 .contactIcon {
   margin-right: 35px;
-  color: #b2bec3;
   font-size: 130%;
 }
 /* Contact Form */
@@ -614,7 +621,7 @@ body {
   height: 85%;
   margin: auto 0;
   display: grid;
-  grid-template-rows: 15% 15% 30% 15% 15%;
+  grid-template-rows: 15% 15% 30% 15% 10% 15%;
 }
 
 .customerData {
@@ -624,10 +631,11 @@ body {
 
 .name,
 .eMail,
-.phone,
+.phoneNumber,
 .subject,
 .captcha,
 .message {
+  display: block;
   width: 100%;
   position: relative;
   height: 90%;
@@ -635,10 +643,20 @@ body {
   margin: 0 auto;
 }
 
+.agreement {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  font-family: "Open Sans" !important;
+  font-size: 65%;
+}
+
+.consentContent {
+  margin-left: 10px;
+}
+
 .inputCaptcha,
-.inputPhone,
-.inputEmail,
-.inputName,
+.inputPersonalData,
 .inputSubject,
 .inputMessage {
   color: #fff;
@@ -647,33 +665,24 @@ body {
   border: none;
   outline: none;
   height: 100%;
-  font-size: 80%;
+  font-size: 65%;
   border-bottom: 1px solid #b2bec3;
   transition: 0.2s;
+  font-family: "Open Sans" !important;
 }
 
 .inputCaptcha:focus,
-.inputPhone:focus,
-.inputEmail:focus,
-.inputName:focus,
+.inputPersonalData,
 .inputSubject:focus,
 .inputMessage:focus {
   border-color: #fff;
 }
 
-input::-webkit-input-placeholder {
-  color: rgb(118, 118, 118);
-  transition: 0.2s;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: rgb(133, 133, 133);
-}
-
-​ .inputName,
-.inputPhone,
-.inputEmail {
+.inputPersonalData {
   width: 90%;
+}
+.inputNumber {
+  appearance: none !important;
 }
 
 .inputCaptcha {
@@ -697,9 +706,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.inputPhone {
-  appearance: none !important;
-}
 
 .submit-btn {
   cursor: pointer;
@@ -717,6 +723,15 @@ input::-webkit-inner-spin-button {
 .submit-btn:active {
   background-color: #fff;
   color: #181a1c;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(118, 118, 118);
+  transition: 0.2s;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: rgb(133, 133, 133);
 }
 
 /* FOOTER */

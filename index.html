@@ -5,6 +5,8 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet"
   />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -225,16 +227,16 @@
                       <div class="content"><div class="icon_howItWorks"><ion-icon name="git-compare-outline"></ion-icon></div><p>WDRAŻAMY</p></div>
                       <div class="content"><div class="icon_howItWorks"><ion-icon name="happy-outline"></ion-icon></div><p>ZADOWALAMY</p></div>
                   </div>
-                  <div class="howItWorksDes_1">
+                  <div class="howItWorksDes_visible">
                       <p>Każdy projekt jest z Państwa specjalistami dokładnie analizowany przez naszych ekspertów. Za każdym razem siadamy do okrągłego stołu, stawiamy beczkę kawy i nie wstajemy dopóki nie wyczerpiemy tematu albo nie skończy się kawa. Zazwyczaj kawy zostaje całkiem dużo ;)</p>
                   </div>
-                  <div class="howItWorksDes_2">
+                  <div class="howItWorksDes_hide">
                       <p>Z każdego spotkania powstają tony notatek .Każdą nawet najmniejszą uwagę skrupulatnie zapisujemy i analizujemy, po to by nasi klienci byli w 100% zadowoleni z naszych usług. Dokumentacja, która powstaje w wyniku tych rozmów i spotkań, jest naszą wizytówką.</p>
                   </div>
-                  <div class="howItWorksDes_3">
+                  <div class="howItWorksDes_hide">
                       <p>Dokumentacja to podstawa dobrze zorganizowanego wdrożenia. Ale nawet najlepiej przygotowana dokumentacja czasem nie wystarczy, dlatego zapewniamy nadzór nad realizacją projektu, udzielamy konsultacji w trakcie postępowań przetargowych i uczestniczymy w odbiorach. Dzięki nam możesz być pewny, że wdrożony będzie system, który razem zaprojektowaliśmy.</p>
                   </div>
-                  <div class="howItWorksDes_4">
+                  <div class="howItWorksDes_hide">
                       <p>Po odbiorze końcowym nie pozostaje już nic innego jak tylko wypić lampkę szampana po prawidłowo zakończonej inwestycji Na odbiór końcowy przyjedziemy z własnoręcznie upieczonym tortem, czekoladowym :)</p>
                   </div>
               </div>
@@ -278,22 +280,22 @@
             <div class="data">
               <div class="contactData">
                 <p>ZADZWOŃ!</p>
-                <p>668 223 996</p>
+                <p class="dataDetails">668 223 996</p>
               </div>
               <div class="contactIconBox"><ion-icon class="contactIcon" name="call-outline"></ion-icon></div>
             </div>
             <div class="data">
               <div class="contactData">
                 <p>PRZYJDŹ!</p>
-                <p>ul. Iwaszkiewicza 22b/7, 10-089</p>
-                <p>Olsztyn</p>
+                <p class="dataDetails">ul. Iwaszkiewicza 22b/7, 10-089</p>
+                <p class="dataDetails">Olsztyn</p>
               </div>
               <div class="contactIconBox"><ion-icon class="contactIcon" name="pin-outline"></ion-icon></div>
             </div>
             <div class="data">
               <div class="contactData">
                 <p>NAPISZ!</p>
-                <p>kontakt@projekty-it.eu</p>
+                <p class="dataDetails">kontakt@projekty-it.eu</p>
               </div>
               <div class="contactIconBox"><ion-icon class="contactIcon" name="mail-outline"></ion-icon></div>
             </div>
@@ -301,23 +303,27 @@
           <form class="contactForm">
             <div class="customerData">
               <div class="name">
-                <input class="inputName" type="text" name="name" autocomplete="off" placeholder="Imię" required>
+                <input class="inputPersonalData" type="text" name="name" autocomplete="off" placeholder="Name" required>
               </div>
               <div class="eMail">
-                <input class="inputEmail" type="email" name="email" autocomplete="off" placeholder="Email" required>
+                <input class="inputPersonalData" type="email" name="email" autocomplete="off" placeholder="Email" required>
               </div>
-              <div class="phone">
-                <input class="inputPhone" type="number" name="number" autocomplete="off" placeholder="Telefon" required>
+              <div class="phoneNumber">
+                <input class="inputPersonalData" type="number" name="number" autocomplete="off" placeholder="Phone" required>
               </div>
             </div>
             <div class="subject">
-              <input class="inputSubject" type="text" name="subject" autocomplete="off" placeholder="Temat" required>
+              <input class="inputSubject" type="text" name="subject" autocomplete="off" placeholder="Subject" required>
             </div>
             <div class="message">
-              <textarea class="inputMessage" name="message" data-error-text="Musisz wypełnić pole" placeholder="Wiadomość" required></textarea>
+              <textarea class="inputMessage" name="message" data-error-text="Musisz wypełnić pole" placeholder="Message" required></textarea>
             </div>
             <div class="captcha">
               <input class="inputCaptcha" type="number" name="captcha" autocomplete="off" placeholder="6 + 3 = ?" required>
+            </div>
+            <div class="agreement">
+              <input class="checkbox" type="checkbox" data-rule-required="true" required name="checkbox">
+              <div class="consentContent">By filling out this form and clicking submit, you agree to our.</div>
             </div>
             <div class="contactButton">
               <button type="submit" class="submit-btn">Wyślij</button>
