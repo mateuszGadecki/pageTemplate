@@ -110,7 +110,7 @@ body {
 .homePage {
   height: 100vh;
   width: 100%;
-  background-image: url(https://projekty-it.eu/wp-content/uploads/2019/01/space-backgrounds-tumblr-hd-background-desktop.jpg);
+  background-image: url(./images/front_background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -256,7 +256,7 @@ body {
 .ourOffer {
   height: auto;
   padding-bottom: 100px;
-  background-image: url(https://beonepage.betheme.me/wp-content/uploads/2015/11/icon-service-bg.jpg);
+  background-image: url(./images/offer_background.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: #181a1c;
@@ -426,7 +426,7 @@ body {
 .howItWorks-section {
   height: 80vh;
   color: #181a1c;
-  background-image: url(https://beonepage.betheme.me/wp-content/uploads/2015/11/work-process-bg.jpg);
+  background-image: url(./images/howItWorks_background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -516,7 +516,7 @@ body {
 /* FUN FACT */
 .funFact-section {
   height: 30vh;
-  background-image: url(https://projekty-it.eu/wp-content/uploads/2018/06/work-process-bg-1.jpg);
+  background-image: url(./images/howItWorks_background.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
