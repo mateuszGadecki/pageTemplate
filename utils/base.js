@@ -2,6 +2,11 @@ export const markers = {
   $homePage: $('.homePage'),
   $aboutUs: $('.aboutUs-section'),
   $ourOffer: $('.ourOffer'),
+  $ourTeam: $('.ourTeam-section'),
+  $howItWorks: $('.howItWorks-section'),
+  $funFact: $('.funFact-section'),
+  $contact: $('.contact-section'),
+  $footer: $('.footerSection'),
 };
 
 export const animations = {
@@ -13,6 +18,10 @@ export const animations = {
   fadeInLeftBig: 'animate__fadeInLeftBig',
   fadeInRightBig: 'animate__fadeInRightBig',
   fadeIn: 'animate__fadeIn',
+  fadeInDown: 'animate__fadeInDown',
+  bounce: 'animate__bounce',
+  flipInY: 'animate__flipInY',
+  pulse: 'animate__pulse',
 };
 
 export const animatedElements = {
@@ -24,8 +33,7 @@ export const animatedElements = {
   $contactTitle: $('.contactTitle'),
   $aboutUsDes: $('.aboutUsDes'),
   $howItWorksDes: $('.howItWorksDes_visible'),
-  $ourTeam: $('.ourTeamContent'),
-  $contactLeft: $('.contactLeft'),
+  $ourTeamContent: $('.ourTeamContent'),
   $contactForm: $('.contactForm'),
   $footerText: $('.footerText'),
   $facts: $('.facts'),
@@ -41,4 +49,8 @@ export const animatedElements = {
   $anim_1: $('.anim_1'),
   $anim_2: $('.anim_2'),
   $anim_3: $('.anim_3'),
+  $anim_4: $('.anim_4'),
+  $data_1: $('.data_1'),
+  $data_2: $('.data_2'),
+  $data_3: $('.data_3'),
 };
