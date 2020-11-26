@@ -147,6 +147,7 @@ body {
   height: auto;
   padding: 80px 0;
   background-color: #181a1c;
+  overflow: hidden;
 }
 
 .aboutUs {
@@ -253,6 +254,19 @@ body {
   font-size: 85%;
 }
 
+.bar_1 {
+  visibility: hidden;
+  --animate-duration: 1s;
+}
+.bar_2 {
+  visibility: hidden;
+  --animate-duration: 1.2s;
+}
+.bar_3 {
+  visibility: hidden;
+  --animate-duration: 1.4s;
+}
+
 /* OFFER */
 .ourOffer {
   height: auto;
@@ -261,6 +275,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #181a1c;
+  overflow: hidden;
+}
+
+.offerTitle {
+  visibility: hidden;
 }
 
 .triangle {
@@ -278,13 +297,13 @@ body {
 .offer {
   height: 100%;
   display: grid;
-  grid-template-rows: 15% 10% 75%;
+  grid-template-rows: 20% 80%;
 }
 
 .offerContent {
   height: 100%;
   color: #fff;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   width: 90%;
   display: grid;
   grid-template-rows: auto;
@@ -297,11 +316,24 @@ body {
 .box_4,
 .box_5,
 .box_6 {
+  visibility: hidden;
   height: 100%;
   text-align: center;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 40px;
+}
+
+.box_1,
+.box_2,
+.box_3 {
+  --animate-duration: 1.5s;
+}
+
+.box_4,
+.box_5,
+.box_6 {
+  --animate-duration: 2.2s;
 }
 
 .icon {
