@@ -54,3 +54,7 @@ export const animatedElements = {
   $data_2: $('.data_2'),
   $data_3: $('.data_3'),
 };
+
+export const sliders = {
+  customers: document.querySelector('.swiper-container'),
+};

@@ -1,27 +1,17 @@
-import { animatedElements, markers, animations } from './utils/base.js';
+import {
+  animatedElements,
+  markers,
+  animations,
+  sliders,
+} from './utils/base.js';
+import AddAnimation from './utils/addAnimation.js';
+import { swiperOptions } from './utils/sliders.js';
 
-class AddAnimation {
-  constructor(waypoint, className, animClassName, offset) {
-    this.waypoint = waypoint;
-    this.className = className;
-    this.animClassName = animClassName;
-    this.offset = offset;
-  }
+/* ------------------------------ANIMATIONS------------------------------ */
+// Our Customers Section------------------------------
+const swiper = new Swiper(sliders.customers, swiperOptions);
 
-  animation() {
-    this.waypoint.waypoint(
-      (direction) => {
-        if (direction === 'down') {
-          this.className.attr('style', 'visibility: visible');
-          this.className.addClass(`${this.animClassName}`);
-          console.log('dziala');
-        }
-      },
-      { offset: `${this.offset}%` }
-    );
-  }
-}
-
+/* ------------------------------ANIMATIONS------------------------------ */
 // Home Page------------------------------
 new AddAnimation(
   markers.$homePage,
