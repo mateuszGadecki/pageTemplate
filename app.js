@@ -3,6 +3,7 @@ import {
   markers,
   animations,
   sliders,
+  hover,
 } from './utils/base.js';
 import AddAnimation from './utils/addAnimation.js';
 import { swiperOptions } from './utils/sliders.js';
@@ -10,6 +11,35 @@ import { swiperOptions } from './utils/sliders.js';
 /* ------------------------------ANIMATIONS------------------------------ */
 // Our Customers Section------------------------------
 const swiper = new Swiper(sliders.customers, swiperOptions);
+
+/* ------------------------------HOVER EFFECT------------------------------ */
+// Our Offer Section------------------------------
+const box = [
+  hover.box_1,
+  hover.box_2,
+  hover.box_3,
+  hover.box_4,
+  hover.box_5,
+  hover.box_6,
+];
+
+box.forEach((el) => {
+  el.addEventListener('mouseover', () => {
+    let box = el.className.split(' ')[0];
+    let icon = document.querySelector(`.js-anim_${box.split('_')[1]}`);
+    console.log(box);
+    console.log(icon);
+
+    icon.classList.remove('out');
+    icon.classList.add('over');
+  });
+  el.addEventListener('mouseout', () => {
+    let box = el.className.split(' ')[0];
+    let icon = document.querySelector(`.js-anim_${box.split('_')[1]}`);
+    icon.classList.add('out');
+    icon.classList.remove('over');
+  });
+});
 
 /* ------------------------------ANIMATIONS------------------------------ */
 // Home Page------------------------------

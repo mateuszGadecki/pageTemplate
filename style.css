@@ -324,6 +324,16 @@ body {
   padding-bottom: 40px;
 }
 
+.box_1:hover .offerBoxDes,
+.box_2:hover .offerBoxDes,
+.box_3:hover .offerBoxDes,
+.box_4:hover .offerBoxDes,
+.box_5:hover .offerBoxDes,
+.box_6:hover .offerBoxDes {
+  color: #fff;
+  transition: color 1s;
+}
+
 .box_1,
 .box_2,
 .box_3 {
@@ -344,6 +354,17 @@ body {
   padding: 0.2em 0.3em;
 }
 
+.over {
+  transform: rotate(360deg);
+  background-color: #ffcc00;
+  transition: background-color 500ms, transform 1000ms ease-out;
+}
+
+.out {
+  transform: rotate(0deg);
+  transition: background-color 500ms, transform 1000ms ease-out;
+}
+
 .offerBoxTitle {
   margin-top: 20px;
   font-weight: 300;
@@ -353,6 +374,7 @@ body {
   margin-top: 20px;
   font-size: 90%;
   line-height: 145%;
+  color: #ddd;
 }
 
 /* OUR TEAM */

@@ -58,3 +58,12 @@ export const animatedElements = {
 export const sliders = {
   customers: document.querySelector('.swiper-container'),
 };
+
+export const hover = {
+  box_1: document.querySelector('.box_1'),
+  box_2: document.querySelector('.box_2'),
+  box_3: document.querySelector('.box_3'),
+  box_4: document.querySelector('.box_4'),
+  box_5: document.querySelector('.box_5'),
+  box_6: document.querySelector('.box_6'),
+};
