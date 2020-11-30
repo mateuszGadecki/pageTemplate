@@ -8,6 +8,17 @@ import {
 import AddAnimation from './utils/addAnimation.js';
 import { swiperOptions, owlOptions } from './utils/sliders.js';
 
+/* ------------------------------COUNTER------------------------------ */
+// Fun Fact Section------------------------------
+markers.$funFact.waypoint(
+  (direction) => {
+    if (direction === 'down') {
+      $('.counter').countTo();
+    }
+  },
+  { offset: '50%' }
+);
+
 /* ------------------------------SLIDERS------------------------------ */
 // Our Customers Section------------------------------
 const swiper = new Swiper(sliders.customers, swiperOptions);
