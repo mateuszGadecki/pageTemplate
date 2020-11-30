@@ -6,11 +6,14 @@ import {
   hover,
 } from './utils/base.js';
 import AddAnimation from './utils/addAnimation.js';
-import { swiperOptions } from './utils/sliders.js';
+import { swiperOptions, owlOptions } from './utils/sliders.js';
 
-/* ------------------------------ANIMATIONS------------------------------ */
+/* ------------------------------SLIDERS------------------------------ */
 // Our Customers Section------------------------------
 const swiper = new Swiper(sliders.customers, swiperOptions);
+
+// Our Team Section------------------------------
+$('.owl-carousel').owlCarousel(owlOptions);
 
 /* ------------------------------HOVER EFFECT------------------------------ */
 // Our Offer Section------------------------------

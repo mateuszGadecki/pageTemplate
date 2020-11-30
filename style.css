@@ -382,21 +382,40 @@ body {
   height: auto;
   padding: 60px 0 140px 0;
   background-color: #181a1c;
+  overflow: hidden;
 }
 
 .ourTeam {
   height: 100%;
-  display: grid;
-  grid-template-rows: 35% 65%;
 }
 
 .ourTeamContent {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  column-gap: normal;
+  display: block;
   visibility: hidden;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+}
+
+.owl-carousel span {
+  background: #888;
+  display: block;
+  height: 9px;
+  padding: 2px 7px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 10px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.owl-carousel .active span {
+  background: #ffcc00;
 }
 
 .posterBox {
@@ -426,15 +445,12 @@ body {
 .teamMember_1,
 .teamMember_2,
 .teamMember_3,
-.teamMember_4 {
+.teamMember_4,
+.teamMember_5,
+.teamMember_6 {
   display: block;
   text-align: center;
   color: #fff;
-}
-
-.teamMember_5,
-.teamMember_6 {
-  display: none;
 }
 
 .workerName {

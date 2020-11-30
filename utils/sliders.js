@@ -10,3 +10,11 @@ export const swiperOptions = {
     disableOnInteraction: false,
   },
 };
+
+export const owlOptions = {
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: true,
+  items: 4,
+};
