@@ -4,6 +4,7 @@ import {
   animations,
   sliders,
   hover,
+  sticky,
 } from './utils/base.js';
 import AddAnimation from './utils/addAnimation.js';
 import { swiperOptions, owlOptions } from './utils/sliders.js';
@@ -226,3 +227,27 @@ new AddAnimation(
   animations.pulse,
   60
 ).animation();
+
+/* ------------------------------STICKY NAVIGATION------------------------------ */
+
+$(document).on('scroll', () => {
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  sticky.bar.style.width = scrolled + '%';
+
+  if ($(document).scrollTop() >= 1) {
+    sticky.$nav.css('display', 'block');
+    sticky.$logo.removeClass('sticky_anim_3');
+    sticky.$nav.addClass('sticky_anim_2');
+    sticky.$logo.addClass('sticky_anim_1');
+  } else {
+    sticky.$nav.css('display', 'none');
+    sticky.$nav.removeClass('sticky_anim_2');
+    sticky.$logo.removeClass('sticky_anim_1');
+    sticky.$logo.addClass('sticky_anim_3');
+  }
+});
