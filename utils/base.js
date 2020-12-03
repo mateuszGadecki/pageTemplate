@@ -68,8 +68,11 @@ export const hover = {
   box_6: document.querySelector('.box_6'),
 };
 
-export const sticky = {
+export const other = {
   bar: document.querySelector('.progress-bar'),
   $logo: $('.logo'),
   $nav: $('.navContainer'),
+  bar_1: document.querySelector('.barLine_1'),
+  bar_2: document.querySelector('.barLine_2'),
+  bar_3: document.querySelector('.barLine_3'),
 };

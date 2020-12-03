@@ -4,9 +4,9 @@ import {
   animations,
   sliders,
   hover,
-  sticky,
+  other,
 } from './utils/base.js';
-import AddAnimation from './utils/addAnimation.js';
+import { AddAnimation, BarAnimation } from './utils/addAnimation.js';
 import { swiperOptions, owlOptions } from './utils/sliders.js';
 
 /* ------------------------------COUNTER------------------------------ */
@@ -237,17 +237,35 @@ $(document).on('scroll', () => {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
-  sticky.bar.style.width = scrolled + '%';
+  other.bar.style.width = scrolled + '%';
 
   if ($(document).scrollTop() >= 1) {
-    sticky.$nav.css('display', 'block');
-    sticky.$logo.removeClass('sticky_anim_3');
-    sticky.$nav.addClass('sticky_anim_2');
-    sticky.$logo.addClass('sticky_anim_1');
+    other.$nav.css('display', 'block');
+    other.$logo.removeClass('sticky_anim_3');
+    other.$nav.addClass('sticky_anim_2');
+    other.$logo.addClass('sticky_anim_1');
   } else {
-    sticky.$nav.css('display', 'none');
-    sticky.$nav.removeClass('sticky_anim_2');
-    sticky.$logo.removeClass('sticky_anim_1');
-    sticky.$logo.addClass('sticky_anim_3');
+    other.$nav.css('display', 'none');
+    other.$nav.removeClass('sticky_anim_2');
+    other.$logo.removeClass('sticky_anim_1');
+    other.$logo.addClass('sticky_anim_3');
   }
 });
+
+/* ------------------------------BAR ANIMATION------------------------------ */
+// About Us Section------------------------------
+let i = 0;
+markers.$aboutUs.waypoint(
+  (direction) => {
+    if (direction === 'down') {
+      if (i === 0) {
+        $('.bar-timer').countTo();
+        new BarAnimation(other.bar_1, 95).move();
+        new BarAnimation(other.bar_2, 70).move();
+        new BarAnimation(other.bar_3, 85).move();
+        i = 1;
+      }
+    }
+  },
+  { offset: '50%' }
+);
