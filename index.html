@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./vendors/css/animate.min.css" />
+  <link rel="stylesheet" href="./vendors/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./vendors/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./vendors/css/owl.theme.default.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <head>
     <meta charset="UTF-8" />
@@ -14,16 +17,20 @@
   </head>
   <body>
     <header class="homePage">
+      <nav class="navContainer sticky-nav">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </nav>
       <div class="navigation">
         <div class="logo">
           <img
-            src="https://projekty-it.eu/wp-content/uploads/2019/11/logo_projety_it2_logo_na_www_small.png"
-            alt="logo"
-          />
+            src="./images/logo.png"
+            alt="logo"/>
         </div>
       </div>
       <div class="text">
-        <h1 class="centerText homePageTitle">
+        <h1 class="centerText homePageTitle animate__animated">
           Nie <span class="yellow">zaprzątaj</span> sobie głowy
           <span class="yellow">projektem!</span>
         </h1>
@@ -34,15 +41,15 @@
     </header>
     <section class="aboutUs-section">
       <div class="aboutUs">
-        <div class="sectionTitle">
+        <div class="sectionTitle aboutUsTitle animate__animated">
           <h2 class="centerText">O <span class="yellow">NAS</span></h2>
           <p class="underCenterText">
             Co przede wszystkim powinieneś wiedzieć?
           </p>
+          <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
         </div>
-        <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
         <div class="aboutUsContent">
-          <div class="aboutUsDes">
+          <div class="aboutUsDes animate__animated">
               <div class="des_1">
                   <p>Tworzymy zespół profesjonalistów z różnych dziedzin. Wśród nas są zarówno osoby z długoletnim stażem, doświadczeni eksperci, posiadający zasób wiedzy z wielu obszarów, jak też osoby młode, dynamiczne, pełne energii i nowatorskich pomysłów.</p>
               </div>
@@ -51,25 +58,28 @@
               </div>
           </div>
           <div class="skillBars">
-              <div class="skill_bar">
+              <div class="skill_bar bar_1 animate__animated">
                   <h3>PROJEKTÓW Z E-USŁUGAMI</h3>
                   <div class="bar-line">
-                      <div class="left left_1"></div>
-                      <div class="right"></div>
+                    <div class="barLine_1">
+                      <span class="bar-timer" data-to="95" data-speed="3000">%</span>
+                    </div>
                   </div>
               </div>
-              <div class="skill_bar">
+              <div class="skill_bar bar_2 animate__animated">
                 <h3>PROJEKTÓW DLA SZPITALI</h3>
                 <div class="bar-line">
-                    <div class="left left_2"></div>
-                      <div class="right"></div>
+                  <div class="barLine_2">
+                    <span class="bar-timer" data-to="70" data-speed="3000">%</span>
+                  </div>
                 </div>
               </div>
-              <div class="skill_bar">
+              <div class="skill_bar bar_3 animate__animated">
                 <h3>PROJEKTÓW Z OBSŁUGĄ PRAWNĄ</h3>
                 <div class="bar-line">
-                    <div class="left left_3"></div>
-                      <div class="right"></div>
+                  <div class="barLine_3">
+                    <span class="bar-timer" data-to="85" data-speed="3000">%</span>
+                  </div>
                 </div>
               </div>
           </div>
@@ -79,45 +89,45 @@
     <section class="ourOffer">
       <div class="triangle"></div>
       <div class="offer">
-        <div class="sectionTitle">
+        <div class="sectionTitle offerTitle animate__animated">
             <h2 class="centerText">NASZA <span class="yellow">OFERTA</span></h2>
             <p class="underCenterText">
               Zapewniamy kompleksową obsługę projektów IT!
             </p>
+            <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
           </div>
-          <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
           <div class="offerContent">
-              <div class="box_1">
-                  <div class="icon"><ion-icon name="document-outline"></ion-icon></div>
+              <div class="box_1 animate__animated">
+                  <div class="js-anim_1 icon"><ion-icon name="document-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle"><span class="yellow">DOKUMENTACJA</span> TECHNICZNA</h3>
                   <div class="offerBoxDes">Przygotowujemy dokumentacje techniczne, Opisy Przedmiotu Zamówienia oraz kompletne SIWZy zarówno dla zamówień poniżej jak i powyżej "progów unijnych".</div>
               </div>
-              <div class="box_2">
-                  <div class="icon"><ion-icon name="hammer-outline"></ion-icon></div>
+              <div class="box_2 animate__animated">
+                  <div class="js-anim_2 icon"><ion-icon name="hammer-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle">PROWADZENIE <span class="yellow">PRZETARGÓW</span></h3>
                   <div class="offerBoxDes">Od przygotowania dokumentacji, poprzez ogłoszenie i przeprowadzenie procedury wyboru wykonawcy aż po podpisanie umowy - wszytko załatwimy za Ciebie.
                 </div>
               </div>
-              <div class="box_3">
-                  <div class="icon"><ion-icon name="wallet-outline"></ion-icon></div>
+              <div class="box_3 animate__animated">
+                  <div class="js-anim_3 icon"><ion-icon name="wallet-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle">INWESTOR <span class="yellow">ZASTĘPCZY</span></h3>
                   <div class="offerBoxDes">Nie masz czasu lub doświadczenia w inwestycjach IT? Wyręczymy Cię we wszystkich obowiązkach. Usiądź wygodnie i podziwiaj...
                 </div>
               </div>
-              <div class="box_4">
-                  <div class="icon"><ion-icon name="document-text-outline"></ion-icon></div>
+              <div class="box_4 animate__animated">
+                  <div class="js-anim_4 icon"><ion-icon name="document-text-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle">PORADY <span class="yellow">PRAWNE</span></h3>
                   <div class="offerBoxDes">Nasi specjaliści od Zamówień Publicznych poradzą sobie z każdym problemem jaki napotkasz podczas przetargu. Jeśli potrzebujesz pomocy, łap za słuchawkę i dzwoń!
                 </div>
               </div>
-              <div class="box_5">
-                  <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
+              <div class="box_5 animate__animated">
+                  <div class="js-anim_5 icon"><ion-icon name="settings-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle">NADZÓR NAD <span class="yellow">WDROŻENIAMI</span></h3>
                   <div class="offerBoxDes">Nie masz kadry technicznej a realizujesz projekt IT? Nie ma problemu! Pomożemy Ci we wdrożeniu i odbiorach.
                 </div>
               </div>
-              <div class="box_6">
-                  <div class="icon"><ion-icon name="camera-outline"></ion-icon></div>
+              <div class="box_6 animate__animated">
+                  <div class="js-anim_6 icon"><ion-icon name="camera-outline"></ion-icon></div>
                   <h3 class="offerBoxTitle">PO WSZYSTKIM..</h3>
                   <div class="offerBoxDes">..zrobimy sobie wspólną fotkę na tle wzorowo ukończonego projektu! :)
                 </div>
@@ -125,19 +135,20 @@
       </div>
     </section>
     <section class="ourTeam-section">
+      <div class="sectionTitle ourTeamTitle animate__animated">
+        <h2 class="centerText">NASZ ZESPÓŁ <span class="yellow">PROFESJONALISTÓW</span></h2>
+        <p class="underCenterText">
+          Nasz zespół tworzą najlepsi specjaliści w swojej dziedzinie!
+        </p>
+        <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
+      </div>
         <div class="ourTeam">
-            <div class="sectionTitle">
-                <h2 class="centerText">NASZ ZESPÓŁ <span class="yellow">PROFESJONALISTÓW</span></h2>
-                <p class="underCenterText">
-                  Nasz zespół tworzą najlepsi specjaliści w swojej dziedzinie!
-                </p>
-              </div>
-              <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
-              <div class="ourTeamContent">
+              <div class="ourTeamContent animate__animated animate__slow">
+                <div class="owl-carousel">
                   <div class="teamMember_1">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2013/06/poster_4_up.jpg">
+                        <img  src="./images/poster_1.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Ninja w IT! Najlepszy z najlepszych! Nikt nie zna się na IT jak on!</p>
@@ -149,7 +160,7 @@
                   <div class="teamMember_2">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2013/06/poster_5_up.jpg">
+                        <img  src="./images/poster_2.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Nasz spec od prawa! Ustawę PZP zna na pamięć - kiedyś wyrecytował całą, przez sen!</p>
@@ -161,7 +172,7 @@
                   <div class="teamMember_3">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2013/06/poster_1_up.jpg">
+                        <img  src="./images/poster_3.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Analityk, audytor, wdrożeniowiec... człowiek o wielu twarzach i nieograniczonych pomysłach.</p>
@@ -173,7 +184,7 @@
                   <div class="teamMember_4">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2013/06/poster_2_up.jpg">
+                        <img  src="./images/poster_4.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Całe życie się targuje, tu przetarg, tam przetarg.. Nie może żyć żeby się trochę nie potargować. Podobno zna na pamięć całą bazę przetargów BZP.</p>
@@ -185,7 +196,7 @@
                   <div class="teamMember_5">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2019/02/poster_3a_up.jpg">
+                        <img  src="./images/poster_5.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Nasz spec od SIWZów. Pisze SIWZy z zamkniętymi oczyma. A przy okazji czasem wyda jakąś opinię prawną :)</p>
@@ -197,7 +208,7 @@
                   <div class="teamMember_6">
                     <div class="posterBox">
                       <div class="poster">
-                        <img  src="https://projekty-it.eu/wp-content/uploads/2019/02/poster_3a_up.jpg">
+                        <img  src="./images/poster_5.jpg">
                       </div>
                       <div class="hoverContent">
                         <p class="hoverText">Spec od rozliczeń projektów UE.</p>
@@ -206,26 +217,27 @@
                       <h4 class="workerName">KLAUDIA</h4>
                       <p class="profession">SpecUE</p>
                   </div>
+                </div>
               </div>
         </div>
     </section>
     <section class="howItWorks-section">
         <div class="triangle"></div>
         <div class="howItWorks">
-            <div class="sectionTitle">
+            <div class="sectionTitle howItWorksTitle animate__animated">
                 <h2 class="centerText">JAK TO <span class="yellow">DZIAŁA?</span></h2>
                 <p class="underCenterText">
                   Projekt w kilku krokach
                 </p>
+                <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
               </div>
-              <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
               <div class="howItWorksContent">
                   <div class="howItWorksIcons">
-                      <div class="content"><div class="icon_howItWorks"><ion-icon name="cafe-outline"></ion-icon></div>
+                      <div class="content anim_1 animate__animated"><div class="icon_howItWorks"><ion-icon name="cafe-outline"></ion-icon></div>
                     <p>ROZMAWIAMY</p></div>
-                      <div class="content"><div class="icon_howItWorks"><ion-icon name="pencil-sharp"></ion-icon></div><p>PROJEKTUJEMY</p></div>
-                      <div class="content"><div class="icon_howItWorks"><ion-icon name="git-compare-outline"></ion-icon></div><p>WDRAŻAMY</p></div>
-                      <div class="content"><div class="icon_howItWorks"><ion-icon name="happy-outline"></ion-icon></div><p>ZADOWALAMY</p></div>
+                      <div class="content anim_2 animate__animated"><div class="icon_howItWorks"><ion-icon name="pencil-sharp"></ion-icon></div><p>PROJEKTUJEMY</p></div>
+                      <div class="content anim_3  animate__animated"><div class="icon_howItWorks"><ion-icon name="git-compare-outline"></ion-icon></div><p>WDRAŻAMY</p></div>
+                      <div class="content anim_4 animate__animated"><div class="icon_howItWorks"><ion-icon name="happy-outline"></ion-icon></div><p>ZADOWALAMY</p></div>
                   </div>
                   <div class="howItWorksDes_visible">
                       <p>Każdy projekt jest z Państwa specjalistami dokładnie analizowany przez naszych ekspertów. Za każdym razem siadamy do okrągłego stołu, stawiamy beczkę kawy i nie wstajemy dopóki nie wyczerpiemy tematu albo nie skończy się kawa. Zazwyczaj kawy zostaje całkiem dużo ;)</p>
@@ -248,43 +260,66 @@
           <h2 class="centerText"><span class="yellow">ZAUFALI</span>  NAM</h2>
         </div>
         <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
-        <div class="ourCustomersContent">
-          <div class="clientItem"><img src="https://projekty-it.eu/wp-content/uploads/2019/01/Powiat-Olsztyn-1.png"></div>
-          <div class="clientItem"><img src="https://projekty-it.eu/wp-content/uploads/2019/03/jonkowo.png"></div>
-          <div class="clientItem"><img src="https://projekty-it.eu/wp-content/uploads/2019/03/alfadental.png"></div>
-          <div class="clientItem"><img src="https://projekty-it.eu/wp-content/uploads/2020/06/szp_bartoszyce-1.png"></div>
+        <div class="ourCustomersContent swiper-container">
+          <div class="swiper-wrapper">
+            <div class="clientItem swiper-slide"><img src="./images/customer_1.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_2.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_3.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_4.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_5.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_6.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_7.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_8.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_9.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_10.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_11.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_12.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_13.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_14.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_15.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_16.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_17.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_18.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_19.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_20.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_21.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_22.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_23.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_24.png"></div>
+          <div class="clientItem swiper-slide"><img src="./images/customer_25.png"></div>
+          </div>
         </div>
       </div>
     </section>
     <section class="funFact-section">
-      <div class="facts">
-        <div class="fact"><div class="centerText">198</div><div class="factDes">ZADOWOLONYCH KLIENTÓW</div></div>
-        <div class="fact"><div class="centerText">240</div><div class="factDes">ZAKOŃCZONYCH PROJEKTÓW</div></div>
-        <div class="fact"><div class="centerText">3220</div><div class="factDes">KUBKÓW WYPITEJ KAWY</div></div>
-        <div class="fact"><div class="centerText">5720</div><div class="factDes">GODZIN PRACY</div></div>
-        <div class="fact"><div class="centerText">22550</div><div class="factDes">DOKUMENTÓW</div></div>
+      <div class="facts animate__animated">
+        <div class="fact"><div class="centerText counter" data-from="0" data-to="198" data-speed="3000"></div><div class="factDes">ZADOWOLONYCH KLIENTÓW</div></div>
+        <div class="fact"><div class="centerText counter" data-from="0" data-to="240" data-speed="3000"></div><div class="factDes">ZAKOŃCZONYCH PROJEKTÓW</div></div>
+        <div class="fact"><div class="centerText counter" data-from="0" data-to="3220" data-speed="3000"></div><div class="factDes">KUBKÓW WYPITEJ KAWY</div></div>
+        <div class="fact"><div class="centerText counter" data-from="0" data-to="5720" data-speed="3000"></div><div class="factDes">GODZIN PRACY</div></div>
+        <div class="fact"><div class="centerText counter" data-from="0" data-to="22550" data-speed="3000"></div><div class="factDes">DOKUMENTÓW</div></div>
         <div class="fact"><div class="centerText">0</div><div class="factDes">PRZERW</div></div>
       </div>
     </section>
     <section class="contact-section">
       <div class="contact">
-        <div class="sectionTitle">
+        <div class="sectionTitle contactTitle animate__animated">
           <h2 class="centerText"><span class="yellow">KONTAKT</span></h2>
           <p class="underCenterText">
             Chcielibyśmy usłyszeć co masz do powiedzenia!
           </p>
+          <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
         </div>
-        <div class="divider"><span></span><span class="dot">&#8226</span><span></span></div>
         <div class="contactContent">
           <div class="contactLeft">
-            <div class="data">
+            <div class="data data_1 animate__animated">
               <div class="contactData">
                 <p>ZADZWOŃ!</p>
                 <p class="dataDetails">668 223 996</p>
               </div>
               <div class="contactIconBox"><ion-icon class="contactIcon" name="call-outline"></ion-icon></div>
             </div>
-            <div class="data">
+            <div class="data data_2 animate__animated">
               <div class="contactData">
                 <p>PRZYJDŹ!</p>
                 <p class="dataDetails">ul. Iwaszkiewicza 22b/7, 10-089</p>
@@ -292,7 +327,7 @@
               </div>
               <div class="contactIconBox"><ion-icon class="contactIcon" name="pin-outline"></ion-icon></div>
             </div>
-            <div class="data">
+            <div class="data data_3 animate__animated">
               <div class="contactData">
                 <p>NAPISZ!</p>
                 <p class="dataDetails">kontakt@projekty-it.eu</p>
@@ -300,7 +335,7 @@
               <div class="contactIconBox"><ion-icon class="contactIcon" name="mail-outline"></ion-icon></div>
             </div>
           </div>
-          <form class="contactForm">
+          <form class="contactForm animate__animated">
             <div class="customerData">
               <div class="name">
                 <input class="inputPersonalData" type="text" name="name" autocomplete="off" placeholder="Name" required>
@@ -334,13 +369,19 @@
     </section>
     <footer class="footerSection">
       <div class="sectionTitle">
-        <h2 class="centerText footerText">Kompleksowe zarządzanie projektami IT</h2>
+        <h2 class="centerText footerText animate__animated">Kompleksowe zarządzanie projektami IT</h2>
         <p class="underCenterText footerSmallText">
           Copyrights &copy 2017. All Rights Reserved.
         </p>
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script src="./vendors/js/jquery-3.5.1.min.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./vendors/js/swiper-bundle.min.js"></script>
+    <script src="./vendors/js/owl.carousel.min.js"></script>
+    <script src="./vendors/js/jquery.countTo.js"></script>
 
   </body>
 </html>
